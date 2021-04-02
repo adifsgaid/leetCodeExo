@@ -8,3 +8,6 @@ def reverse(x)
   end
   x.bit_length > 31 ? 0 : x
 end
+
+
+
