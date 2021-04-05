@@ -2,7 +2,7 @@
 def fibonacci(n, result = {})
 return n if n <= 2
 return result[n] if result.include? (n)
-result[n]= fibonacci(n - 1, result) + fibonacci(n - 2, result)
+result[n] = fibonacci(n - 1, result) + fibonacci(n - 2, result)
 return result[n]
 end
 
