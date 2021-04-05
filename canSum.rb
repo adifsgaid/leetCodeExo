@@ -7,5 +7,6 @@ def canSum(target, array)
     remainder = target - num
     return true if canSum(remainder, array) == true
   end
+
   return false
 end
