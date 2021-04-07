@@ -20,3 +20,42 @@ def best_sum(target, array)
 
    shortResult
 end
+
+
+
+
+def can_sum(target, array, memo={})
+  return memo[target] if memo.include? (target)
+  return [] if target == 0
+  return nil if target < 0
+
+  shortResult = nil
+
+  array.each do |num|
+    remainder = target - num
+
+    remainderResult = can_sum(remainder, array, memo)
+
+    if remainderResult != nil
+      combination = [*remainderResult, num]
+
+    if shortResult == nil || combination.length < shortResult.length
+      shortResult = combination
+      memo[target] = shortResult
+      end
+    end
+  end
+  shortResult
+end
+
+
+
+
+
+
+
+
+
+
+
+
