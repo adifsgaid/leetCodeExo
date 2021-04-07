@@ -24,7 +24,7 @@ end
 
 
 
-def can_sum(target, array, memo={})
+def best_sum(target, array, memo={})
   return memo[target] if memo.include? (target)
   return [] if target == 0
   return nil if target < 0
