@@ -1,3 +1,4 @@
+#  Solution Best Sum  With Recursion
 def best_sum(target, array)
   return [] if target == 0
   return nil if target < 0
@@ -21,8 +22,7 @@ def best_sum(target, array)
    shortResult
 end
 
-
-
+#  Solution Best Sum  With Recursion and Memoization
 
 def best_sum(target, array, memo={})
   return memo[target] if memo.include? (target)
@@ -47,15 +47,3 @@ def best_sum(target, array, memo={})
   end
   shortResult
 end
-
-
-
-
-
-
-
-
-
-
-
-
