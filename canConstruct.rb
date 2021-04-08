@@ -20,3 +20,10 @@ can_construct("abc",["a","cd","c","b"])
 can_construct("abcdef",["a","cd","c","b"])
 can_construct("abcdef",["ab","abc","cd","def","abcd"])
 can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ce","ee","eeeeeeee"])
+
+
+def checking(arr)
+ arr.uniq.count { |char| arr.count(char) > 1; return char}
+end
+
+checking(["d","a","d","h","d"])
