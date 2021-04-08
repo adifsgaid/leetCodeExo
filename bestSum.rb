@@ -21,7 +21,6 @@ def best_sum(target, array)
 
    shortResult
 end
-
 #  Solution Best Sum  With Recursion and Memoization
 
 def best_sum(target, array, memo={})
