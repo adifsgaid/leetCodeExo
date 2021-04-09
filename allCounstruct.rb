@@ -24,3 +24,4 @@ all_contruct("purple",["purp","p","ur","le","purpl"])
 ["purp", "le"]
 ["p","ur", "p", "le"]
 ]
+
