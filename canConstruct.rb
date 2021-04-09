@@ -16,9 +16,24 @@ def can_construct(target, wordBank)
 end
 
 
-can_construct("abc",["a","cd","c","b"])
-can_construct("abcdef",["a","cd","c","b"])
-can_construct("abcdef",["ab","abc","cd","def","abcd"])
-can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ce","ee","eeeeeeee"])
+can_construct("abdef",["ab","abc","cd","def","abcd"])
 
 
+
+
+
+
+
+can_construct(["eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef"],["e","ce","ee","eeeeeeee"])
+
+
+
+
+
+
+
+
+
+
+can_construct(["abc"],["a","cd","c","b"])
+can_construct(["abcdef"],["a","cd","c","b"])
