@@ -7,7 +7,6 @@ checking(["d","d","h","d"])
 
 
 def check(arr)
-  new_arr = arr.uniq.count
   arr.each do |time|
     arr.count(time) > 1
     return time
