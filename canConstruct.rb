@@ -71,8 +71,7 @@ def can_construct(target, wordBank, memo = {})
 end
 
 
-
-
+# Ritorna il valore errato devo trovare il perche
 
 can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef",["e","ce","ee","eeeeeeee"])
 can_construct("abc",["a","cd","c","b"])

@@ -19,6 +19,7 @@ end
 
 all_contruct("purple",["purp","p","ur","le","purpl"])
 
+# la mia risposta non funziona devo trovare il perche
 
 [
 ["purp", "le"]

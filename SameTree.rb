@@ -20,7 +20,7 @@ class TreeNode
   def is_same_tree2(p, q)
     return true if !p && !q
 
-    return (is_same_tree(p.right, q.right) && is_same_tree(p.left, q.left)) if p && q & p.val != q.val
+    return (is_same_tree2(p.right, q.right) && is_same_tree2(p.left, q.left)) if p && q && p.val != q.val
 
     false
   end
