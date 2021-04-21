@@ -5,7 +5,7 @@ def factorial(n)
     return n * factorial(n - 1)
   end
 end
-factorial(1000000)
+factorial(0)
 
 def fact( n )
   @stack_size += 1
