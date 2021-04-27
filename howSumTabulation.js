@@ -5,10 +5,10 @@ const howSumTabulation = (target, numbers) => {
   for (let i = 0; i <= target; i++){
     if (table[i] !==  null ){
      for (let num of  numbers){
-      table[i + num] = [...table[i]]
+      table[i + num] = [...table[i], num]
      }
     }
   }
   return table[target]
 }
-console.log(howSumTabulation(5,[4,5,3]))
+console.log(howSumTabulation(9,[4,5,3]))
