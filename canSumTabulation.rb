@@ -3,18 +3,17 @@ def can_sum_tabulation(target, numbers)
 
   table = Array.new(target + 1).fill(false)
   table[0]= true
-  i = 0
 
-  while i <= target
-    i += 1
+  i = 0
+  while
     if table[i] == true
       numbers.each do |num|
         table[i + num] = true
       end
     end
    end
-    return table[target]
-  end
+  return table[target]
+end
 
 
 
