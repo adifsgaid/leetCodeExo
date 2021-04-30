@@ -25,3 +25,48 @@ def two_sum(target, nums)
   result
 end
 two_sum(9,[2,7,11,15])
+
+
+
+
+def fibo_tabo(num)
+  table = Array.new(num + 1).fill(0)
+  table[num]= 0
+  table[1]= 1
+
+  for i in (2...num + 1)
+    table[i] = table[i - 1] + table[i - 2]
+  end
+
+  return table[num]
+end
+
+fibo_tabo(3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

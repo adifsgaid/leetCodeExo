@@ -11,5 +11,14 @@ const fibo = (n) => {
 
 console.log(fibo(6))
 console.log(fibo(7))
-console.log(fibo(8))
-console.log(fibo(50))
+
+
+const  finbonacci = (num) =>{
+  if (num <= 2){
+    return num
+  }
+  const result = finbonacci(num - 1) + finbonacci(num - 2)
+  return result
+}
+console.log(finbonacci(8))
+console.log(finbonacci(50))
