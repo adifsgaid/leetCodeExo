@@ -43,17 +43,22 @@ end
 
 fibo_tabo(3)
 
+def facto(n)
+  if n <= 1
+    return n
+  else
+
+  return n * facto(n - 1)
+ end
+end
+
+facto(43)
 
 
-
-
-
-
-
-
-
-
-
+def show
+  @post = @post.views + 1
+  @post.save
+end
 
 
 
