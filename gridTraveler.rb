@@ -6,7 +6,6 @@ def grid_traveler(x,y)
   grid_traveler(x - 1,y) + grid_traveler(x,y - 1)
 end
 
-
 # Grid Traveller using MEMOIZATION && RECURSION
 def grid_traveler(x, y, memo={})
   key = x,y
