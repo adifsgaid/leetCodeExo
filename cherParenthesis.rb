@@ -17,3 +17,22 @@ def is_valid(s)
   end
   queue.count == 0
 end
+
+
+def is_valid(s)
+
+    queue = []
+    s.each_char do |char|
+        case char
+        when '(', '[', '{'
+            queue.push(char)
+        when ')'
+            return false if queue.pop != '('
+        when ']'
+            return false if queue.pop != '['
+        when '}'
+            return false if queue.pop != '{'
+        end
+    end
+    queue.count == 0
+end
