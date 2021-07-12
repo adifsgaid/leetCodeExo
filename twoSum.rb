@@ -63,7 +63,18 @@ end
 
 
 
+def two_Sum(nums, target)
+  map = {}
 
+  nums.each_with_index do |num, index|
+    diff = target - num 
+     if map[diff]
+        return [map[diff], index]
+     else
+       map[num] = index
+     end
+  end 
+end
 
 
 
