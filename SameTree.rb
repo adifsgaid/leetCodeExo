@@ -1,7 +1,7 @@
 class TreeNode
   attr_accessor :val, :left, :right
-  def initializer(val = 0, left = nil, right = nil)
-    @val = val
+  def initializer(variabile = 0, left = nil, right = nil)
+ @variabile = variabile
     @left = left
     @right = right
   end
