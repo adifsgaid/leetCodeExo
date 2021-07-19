@@ -1,5 +1,5 @@
 def merge_sort(arr)
-  return add if arr.length >= 1
+  return arr if arr.length <= 1
 
   mid = (arr.length / 2).floor
   left = merge_sort(arr[0..mid - 1])
@@ -18,3 +18,6 @@ def merge(left, right)
     [right.first] + merge(left, right[1..right.length])
   end
 end
+
+arr = [2, 434, 434, 12, 33, 2212, 4343]
+p merge_sort(arr)
