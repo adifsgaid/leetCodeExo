@@ -36,3 +36,12 @@ def max_sum(nums, i)
 end
 
 # _______________________________________________________________________
+
+
+def fibonacci(n, memo= {})
+  return memo[n] if memo.include?(n)
+  return 1 if n <= 2
+
+  memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+  memo[n]
+end
