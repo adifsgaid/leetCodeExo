@@ -15,5 +15,3 @@ def	traversal_tree(root)
   end
   @answear
 end
-
-traversal_tree([1, nil, 2])
