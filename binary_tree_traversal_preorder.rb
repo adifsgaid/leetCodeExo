@@ -28,6 +28,10 @@ class BinarySearch
     puts answear
   end
 
+
+  
+
+
   def insert(value)
     puts 'Inserting :' + value.to_s
     current_node = @root
